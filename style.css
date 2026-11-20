@@ -1,0 +1,261 @@
+
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf7ff;
+    color: #18354a;
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    background-color: #087eaa;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Subheadings */
+h2 {
+    color: #087eaa;
+    margin-top: 30px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 20px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #064663;
+    padding: 15px;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Mouse hover effect */
+nav a:hover {
+    color: #7fffd4;
+}
+
+/* Home section */
+.hero {
+    padding: 80px 20px;
+    background: linear-gradient(
+        to right,
+        #087eaa,
+        #38b6a5
+    );
+    color: white;
+}
+
+/* Main heading inside home */
+.hero h1 {
+    background: none;
+    font-size: 42px;
+}
+
+/* Home subheading */
+.hero h2 {
+    color: white;
+    font-size: 28px;
+}
+
+/* Explore button */
+.explore-btn {
+    display: inline-block;
+    background-color: white;
+    color: #087eaa;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Water crisis section */
+.crisis {
+    padding: 50px 20px;
+    background-color: #f0f9ff;
+}
+
+/* Cards layout */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Individual cards */
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Card headings */
+.card h3 {
+    color: #087eaa;
+}
+
+/* Card paragraphs */
+.card p {
+    font-size: 16px;
+}
+
+/* Water conservation section */
+.conservation {
+    padding: 50px 20px;
+    background-color: #dff5f0;
+}
+
+/* Water and society section */
+.society {
+    padding: 50px 20px;
+    background-color: #f0f9ff;
+}
+
+/* Water calculator */
+.calculator {
+    padding: 50px 20px;
+    background-color: #dff5f0;
+}
+
+.calculator input {
+    padding: 12px;
+    width: 220px;
+    border: 1px solid #087eaa;
+    border-radius: 8px;
+}
+
+.calculator button {
+    padding: 12px 22px;
+    background-color: #087eaa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: #064663;
+}
+
+/* Quiz section */
+.quiz {
+    padding: 50px 20px;
+    background-color: #eaf7ff;
+}
+
+.quiz button {
+    padding: 10px 18px;
+    margin: 8px;
+    background-color: #087eaa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #064663;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Keep navigation visible while scrolling */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/* Home image */
+.hero-image {
+    width: 80%;
+    max-width: 650px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: block;
+}
+/* Section images */
+.section-image {
+    width: 80%;
+    max-width: 600px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Mobile-friendly design */
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-image,
+    .section-image {
+        width: 95%;
+        height: 200px;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+    .calculator input {
+        max-width: 80%;
+    }
+
+}
